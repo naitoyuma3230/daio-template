@@ -1,0 +1,62 @@
+.nav-items {
+	font-family: "Shippori Mincho";
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.nav-items * {
+	box-sizing: border-box;
+}
+
+.nav-items li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: 0 0.5em;
+	padding: 0;
+	font-size: 1rem;
+}
+
+.nav-items a {
+	padding: 0.5rem 0;
+	color: rgba(102, 102, 102, 0.5);
+	position: relative;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+.nav-items a:before,
+.nav-items a:after {
+	position: absolute;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+.nav-items a:before {
+	bottom: 0;
+	display: block;
+	height: 3px;
+	width: 0%;
+	content: "";
+	background-color: #0c6b41;
+}
+.nav-items a:after {
+	left: 0;
+	top: 0;
+	padding: 0.5em 0;
+	position: absolute;
+	content: attr(data-hover);
+	color: black;
+
+	white-space: nowrap;
+	max-width: 0%;
+	overflow: hidden;
+}
+.nav-items a:hover:before,
+.nav-items .current a:before {
+	opacity: 1;
+	width: 100%;
+}
+.nav-items a:hover:after,
+.nav-items .current a:after {
+	max-width: 100%;
+}
+
+/* Demo purposes only */
