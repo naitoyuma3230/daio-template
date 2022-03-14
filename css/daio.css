@@ -32,6 +32,19 @@ h2 {
 	white-space: nowrap;
 }
 
+.w-100 {
+	width: 100%;
+	padding-right: 10px;
+}
+
+.text-white {
+	color: white;
+}
+
+.margin-0 {
+	margin: 0;
+}
+
 .nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -47,6 +60,14 @@ h2 {
 .d-column {
 	display: flex;
 	flex-direction: column;
+}
+
+.margin-y-40 {
+	margin: 40px 0;
+}
+
+.margin-0 {
+	margin: 0;
 }
 
 .justify-center {
@@ -96,6 +117,7 @@ h2 {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	margin: 40px 0;
 }
 
 .border-b {
@@ -106,12 +128,13 @@ h2 {
 	text-align: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
 .section-area {
-	display: flex;
-	justify-content: center;
-	align-items: baseline;
-	margin: 40px auto;
-	padding: 30px 10px;
+	margin: 20px auto;
+	padding: 40px 0;
 	width: 100%;
 	min-height: 40rem;
 }
@@ -140,9 +163,9 @@ h2 {
 }
 
 .nav-icon {
-	width: 50px;
-	height: 50px;
-	margin: 0 10px;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
 	white-space: nowrap;
 	flex-shrink: 0;
 }
@@ -205,4 +228,8 @@ h2 {
 		margin-top: -1px;
 		text-align: center;
 	}
+}
+
+.history-margin {
+	padding-right: 40px;
 }

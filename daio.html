@@ -14,7 +14,8 @@
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
       rel="stylesheet" type="text/css" />
@@ -29,6 +30,7 @@
     <link rel="stylesheet" href="./css/mycss.css ">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/scroll.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -40,25 +42,25 @@
 
   <body>
 
-  <!-- <div id="splash">
+    <div id="splash">
     <div id="splash_logo">
       <h1>株式会社&ensp;大王実業</h1>
       <div class="v-hr-green text-white"></div>
     </div>
-  </div> -->
+  </div>
 
 
     <header>
-      <div class="align-center">
+      <div class="align-center justify-center w-100">
         <img src="assets\daioLogo-12.jpg" class="justify-self-center nav-icon">
         <nav>
           <div class="v-nav">
             <ul class="nav-items">
               <li class="current"><a href="#" data-hover="ホーム">ホーム</a></li>
-              <li><a href="#" data-hover="代表挨拶">代表挨拶</a></li>
+              <li><a href="#" data-hover="代表挨拶">代表紹介</a></li>
               <li><a href="#" data-hover="事業内容">事業内容</a></li>
               <li><a href="#" data-hover="実績紹介">実績紹介</a></li>
-              <li><a href="#" data-hover="お問い合わせ">お問い合わせ</a></li>
+              <li><a href="#" data-hover="お問合わせ">お問合わせ</a></li>
             </ul>
           </div>
         </nav>
@@ -71,7 +73,7 @@
         <div class="justify-center">
           <img src="assets\daioLogo-12.jpg" style="width: 150px; width: 150px;">
         </div>
-          <h1>大王実業</h1>
+        <h1>大王実業</h1>
         <div class="text-center">
           <div class="justify-between align-end border-b">
             <h2>この街に貢献したい</h2>
@@ -84,24 +86,129 @@
       </div>
     </section>
 
-    <section class="section-area bg-green">
-      <div class="text-center items-area">
-        <img src="./assets\img\portfolio\thumbnails\faceimage.png" class="img-thumbnail rounded-circle"
-          style="width:300px; margin:0 auto">
-        <div class="text-white">
-          <h4>代表取締役</h4>
-          <h2>王&ensp;磊</h2>
-          <p>ワン&ensp;レイ</p>
-        </div>
-        <div class="v-hr-white"></div>
-        <div class="text-white">
-          <h4 class="text-white mb-4">私にとって仕事とは</h4>
-          <p class="text-white-75 mb-3">
-            仕事とは社会貢献だと思います。今は外壁屋根工事のほかにも不動産賃貸、空き家再生、貿易関係等を手がけていますがどの仕事においても、自分の働きが誰かの何かに貢献することに
-            直結していると思っています。それはお客様ひとりに対してなのか、ひとつのグループに対してなのか、はたまたひとつの自治体、あるいは国や全世界に対してなのか、その規模に違いがあるだけです。
-          </p>
+    <section class="section-area bg-green text-center">
+
+      <div class="section-area justify-center bg-green">
+        <div class="text-center items-area">
+          <div class="items-area">
+            <h1 class="margin-0 text-white">代表紹介</h1>
+            <div class="v-hr-white margin-0"></div>
+          </div>
+          <img src="./assets\img\portfolio\thumbnails\faceimage.png" class="img-thumbnail rounded-circle"
+            style="width:300px; margin:0 auto">
+          <div class="text-white">
+            <h3>代表取締役</h3>
+            <h2 class="margin-0">王&ensp;磊</h2>
+            <p class="margin-0">ワン&ensp;レイ</p>
+          </div>
+          <div class="v-hr-white"></div>
+          <div class="text-white">
+            <h class="text-white mb-4">社長挨拶</h>
+            <p class="text-white-75 mb-3">
+              仕事とは社会貢献だと思います。今は外壁屋根工事のほかにも不動産賃貸、空き家再生、貿易関係等を手がけていますがどの仕事においても、自分の働きが誰かの何かに貢献することに
+              直結していると思っています。それはお客様ひとりに対してなのか、ひとつのグループに対してなのか、はたまたひとつの自治体、あるいは国や全世界に対してなのか、その規模に違いがあるだけです。
+            </p>
+          </div>
         </div>
       </div>
+      <div class="section-area justify-center">
+        <div class="items-area">          
+          <div class="text-center text-white">
+            <h2>経歴</h2>
+            <div class="v-hr-white"></div>
+          </div>
+
+          <div class="history-margin">
+            <ul class="timeline text-white">
+              <li>
+                <dl>
+                  <dt>1989年</dt>
+                  <dd>
+                    <h4>中国・天津市で誕生</h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2005年</dt>
+                  <dd>
+                    <h4>バスケットボール留学生として来日</h4>
+                    <br>
+                    <h4>藤枝明誠高校入学</h4>
+                    <br>
+                    <h4>入学東海大会優勝、全国大会出場</h4>
+                    <br>
+                    <h4>静岡産業大学入学</h4>
+                    <br>
+                    <h4>国体出場・リバウンド王賞獲得</h4>
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2005</dt>
+                  <dd>
+                    <strong>出来事の見出し</strong>
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2010</dt>
+                  <dd>
+                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2018</dt>
+                  <dd>
+                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2020</dt>
+                  <dd>
+                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+              <li>
+                <dl>
+                  <dt>2025</dt>
+                  <dd>
+                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
+                  </dd>
+                </dl>
+                <span class="border-line"></span>
+              </li>
+            </ul>
+          </div>
+
+
+
+
+
+          <!--/area1-->
+        </div>
+      </div>
+    </section>
+
+
     </section>
 
 
@@ -507,145 +614,145 @@
           </div>
         </div>
       </div> -->
-      <!-- Call to action-->
-      <section class="page-section bg-dark text-white">
-        <div class="container px-4 px-lg-5 text-center">
-          <h2 class="mb-4">こんな活動もしています</h2>
-          <hr class="divider" />
-          <a class="btn btn-light btn-xl" href="/">バスケチームやその他の活動のホームページへ</a>
-        </div>
-      </section>
-      <!-- Contact-->
-      <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-          <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-              <h2 class="mt-0">お問い合わせフォーム</h2>
-              <hr class="divider" />
-              <p class="text-muted mb-5">お仕事の依頼や質問などお気軽にご相談ください</p>
-            </div>
-          </div>
-          <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-            <div class="col-lg-6">
-              <!-- * * * * * * * * * * * * * * *-->
-              <!-- * * SB Forms Contact Form * *-->
-              <!-- * * * * * * * * * * * * * * *-->
-              <!-- This form is pre-integrated with SB Forms.-->
-              <!-- To make this form functional, sign up at-->
-              <!-- https://startbootstrap.com/solution/contact-forms -->
-              <!-- to get an API token!-->
-              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <!-- Name input-->
-                <div class="form-floating mb-3">
-                  <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                    data-sb-validations="required" />
-                  <label for="name">お名前</label>
-                  <div class="invalid-feedback" data-sb-feedback="name:required">お名前を記入してください</div>
-                </div>
-                <!-- Email address input-->
-                <div class="form-floating mb-3">
-                  <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                    data-sb-validations="required,email" />
-                  <label for="email">メールアドレス</label>
-                  <div class="invalid-feedback" data-sb-feedback="email:required">メールアドレスを記入してください</div>
-                  <div class="invalid-feedback" data-sb-feedback="email:email">無効なメールアドレスです</div>
-                </div>
-                <!-- Phone number input-->
-                <div class="form-floating mb-3">
-                  <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                    data-sb-validations="required" />
-                  <label for="phone">電話番号</label>
-                  <div class="invalid-feedback" data-sb-feedback="phone:required">電話番号を記入してください</div>
-                </div>
-                <!-- Message input-->
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                    style="height: 10rem" data-sb-validations="required"></textarea>
-                  <label for="message">メッセージ</label>
-                  <div class="invalid-feedback" data-sb-feedback="message:required">お問い合わせ内容を記入してください</div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                  <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a
-                      href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                  </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage">
-                  <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
-                <!-- Submit Button-->
-                <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
-                    type="submit">Submit</button></div>
-              </form>
-            </div>
+    <!-- Call to action-->
+    <section class="page-section bg-dark text-white">
+      <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">こんな活動もしています</h2>
+        <hr class="divider" />
+        <a class="btn btn-light btn-xl" href="/">バスケチームやその他の活動のホームページへ</a>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="mt-0">お問い合わせフォーム</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-5">お仕事の依頼や質問などお気軽にご相談ください</p>
           </div>
         </div>
-      </section>
-      <!-- Footer-->
-      <footer class="py-5 bg-dark text-white">
-        <div id="footerwrap">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4" style="margin-bottom:30px;">
-                <h4>会社住所</h4>
-                <hr class="wid-line my-2" />
-                <p class="text-light">
-                  <i class="fa-solid fa-location-dot"></i>&ensp;本社&ensp;静岡県藤枝市岡部<br>
-                  <i class="fa-solid fa-location-dot"></i>&ensp;岡部事務所&ensp;静岡県藤枝市岡部
-                </p>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms -->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                  data-sb-validations="required" />
+                <label for="name">お名前</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">お名前を記入してください</div>
               </div>
-              <div class="col-lg-4" style="margin-bottom:30px;">
-                <h4>電話番号&ensp;FAX</h4>
-                <hr class="wid-line my-2" />
-                <!-- <div class="hline-w"></div> -->
-                <p><i class="fa-solid fa-phone"></i>&ensp;054-631-6988<br />
-                  <i class="fa-solid fa-fax"></i>&ensp;054-631-6989<br />
-                </p>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                  data-sb-validations="required,email" />
+                <label for="email">メールアドレス</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">メールアドレスを記入してください</div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">無効なメールアドレスです</div>
               </div>
-              <div class="col-lg-4" style="margin-bottom:30px;">
-                <h4>Links</h4>
-                <hr class="wid-line my-2" />
-                <div class="hline-w"></div>
-                <p>
-                  <a href="#">
-                    <istyle= class="fa-brands fa-twitter" style="font-size:30px; color:#1DA1F2;"></i></i>
-                  </a>
-                  &ensp;&ensp;<a href="#"><i class="fa-brands fa-facebook"
-                      style="font-size:35px; color:#1877f2;"></i></a>
-                  &ensp;&ensp;<a href="#"><i class="fa-brands fa-instagram"
-                      style="font-size:35px; color:#CF2E92;"></i></a>
-                </p>
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                  data-sb-validations="required" />
+                <label for="phone">電話番号</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">電話番号を記入してください</div>
               </div>
-            </div>
-            <div class="container px-4 px-lg-5">
-              <div class="small text-center text-muted">Copyright &copy; 2022 - 株式会社 大王実業</div>
-            </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                  style="height: 10rem" data-sb-validations="required"></textarea>
+                <label for="message">メッセージ</label>
+                <div class="invalid-feedback" data-sb-feedback="message:required">お問い合わせ内容を記入してください</div>
+              </div>
+              <!-- Submit success message-->
+              <!---->
+              <!-- This is what your users will see when the form-->
+              <!-- has successfully submitted-->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                  <br />
+                  <a
+                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+              </div>
+              <!-- Submit error message-->
+              <!---->
+              <!-- This is what your users will see when there is-->
+              <!-- an error submitting the form-->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+              </div>
+              <!-- Submit Button-->
+              <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
+                  type="submit">Submit</button></div>
+            </form>
           </div>
         </div>
-      </footer>
-      <!-- Bootstrap core JS-->
-      <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
-      <!-- Core theme JS-->
-      <script src="http://daioworks.local\wp-content\themes\bootstrapThemes/js/scripts.js"></script>
-      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-      <!-- * *                               SB Forms JS                               * *-->
-      <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-      <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark text-white">
+      <div id="footerwrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4" style="margin-bottom:30px;">
+              <h4>会社住所</h4>
+              <hr class="wid-line my-2" />
+              <p class="text-light">
+                <i class="fa-solid fa-location-dot"></i>&ensp;本社&ensp;静岡県藤枝市岡部<br>
+                <i class="fa-solid fa-location-dot"></i>&ensp;岡部事務所&ensp;静岡県藤枝市岡部
+              </p>
+            </div>
+            <div class="col-lg-4" style="margin-bottom:30px;">
+              <h4>電話番号&ensp;FAX</h4>
+              <hr class="wid-line my-2" />
+              <!-- <div class="hline-w"></div> -->
+              <p><i class="fa-solid fa-phone"></i>&ensp;054-631-6988<br />
+                <i class="fa-solid fa-fax"></i>&ensp;054-631-6989<br />
+              </p>
+            </div>
+            <div class="col-lg-4" style="margin-bottom:30px;">
+              <h4>Links</h4>
+              <hr class="wid-line my-2" />
+              <div class="hline-w"></div>
+              <p>
+                <a href="#">
+                  <istyle= class="fa-brands fa-twitter" style="font-size:30px; color:#1DA1F2;"></i></i>
+                </a>
+                &ensp;&ensp;<a href="#"><i class="fa-brands fa-facebook" style="font-size:35px; color:#1877f2;"></i></a>
+                &ensp;&ensp;<a href="#"><i class="fa-brands fa-instagram"
+                    style="font-size:35px; color:#CF2E92;"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2022 - 株式会社 大王実業</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="http://daioworks.local\wp-content\themes\bootstrapThemes/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-      <!-- 自分のjs -->
-      <script src="./js/myjs.js"></script>
+    <!-- 自分のjs -->
+    <script src="./js/myjs.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 
 </html>
