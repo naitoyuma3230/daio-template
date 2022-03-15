@@ -13,28 +13,19 @@ body {
 
 header {
 	font-family: "Shippori Mincho";
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	white-space: nowrap;
 }
 
 ul {
 	padding-inline-start: 0px;
 }
 
-header {
-	max-width: 800px;
-	width: 100%;
-	display: flex;
-	justify-content: start;
-	padding-top: 10px;
-}
-
 h1,
 h2 {
 	white-space: nowrap;
-}
-
-.w-100 {
-	width: 100%;
-	padding-right: 10px;
 }
 
 .text-white {
@@ -107,17 +98,29 @@ h2 {
 	align-items: flex-end;
 }
 
+.v-spacer {
+	margin: 0 auto;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
 .contents-area {
 	max-width: 1100px;
 	width: 100%;
 }
 
 .items-area {
-	max-width: 600px;
+	max-width: 440px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	margin: 40px 0;
+}
+
+.text-area {
+	margin: 0 0.8rem;
 }
 
 .border-b {
@@ -158,7 +161,7 @@ h2 {
 }
 
 .v-nav {
-	margin: 10px 0;
+	margin: 0px 0;
 	width: 100%;
 }
 
@@ -190,7 +193,7 @@ h2 {
 }
 
 .mytable {
-	font-size: 20px;
+	font-size: 1rem;
 	width: 100%;
 	border-collapse: collapse;
 	box-sizing: border-box;

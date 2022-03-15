@@ -11,9 +11,9 @@
 .nav-items li {
 	display: inline-block;
 	list-style: outside none none;
-	margin: 0 0.4em;
+	/* margin: 0 1rem; */
 	padding: 0;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 .nav-items a {
@@ -40,7 +40,7 @@
 .nav-items a:after {
 	left: 0;
 	top: 0;
-	padding: 0.5em 0;
+	padding: 0.6em 0;
 	position: absolute;
 	content: attr(data-hover);
 	color: black;

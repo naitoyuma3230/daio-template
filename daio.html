@@ -16,9 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-      rel="stylesheet" type="text/css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet" type="text/css" /> -->
     <!-- fontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="./css/daio.css ">
     <link rel="stylesheet" href="./css/mycss.css ">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/scroll.css">
+    <link rel="stylesheet" href="./css/loading.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -42,246 +42,229 @@
 
   <body>
 
+
     <div id="splash">
-    <div id="splash_logo">
-      <h1>株式会社&ensp;大王実業</h1>
-      <div class="v-hr-green text-white"></div>
+      <div id="splash-logo">
+        <h1>株式会社&ensp;大王実業</h1>
+        <div class="v-hr-green text-white"></div>
+      </div>
     </div>
-  </div>
+    <div class="splashbg1"></div>
+    <div class="splashbg2"></div>
+    <!---画面遷移用-->
 
 
-    <header>
-      <div class="align-center justify-center w-100">
-        <img src="assets\daioLogo-12.jpg" class="justify-self-center nav-icon">
-        <nav>
-          <div class="v-nav">
-            <ul class="nav-items">
-              <li class="current"><a href="#" data-hover="ホーム">ホーム</a></li>
-              <li><a href="#" data-hover="代表挨拶">代表紹介</a></li>
-              <li><a href="#" data-hover="事業内容">事業内容</a></li>
-              <li><a href="#" data-hover="実績紹介">実績紹介</a></li>
-              <li><a href="#" data-hover="お問合わせ">お問合わせ</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <div id="container">
 
-
-    <section class="section-area justify-center">
-      <div class="text-center items-area">
-        <div class="justify-center">
-          <img src="assets\daioLogo-12.jpg" style="width: 150px; width: 150px;">
+      <header>
+        <div class="align-center justify-center w-100">
+          <!-- <img src="assets\daioLogo-12.jpg" class="justify-self-center nav-icon"> -->
+          <nav>
+            <div class="v-nav">
+              <ul class="nav-items">
+                <li class="current"><a href="#" data-hover="ホーム">ホーム</a></li>
+                <li><a href="#" data-hover="代表紹介">代表紹介</a></li>
+                <li><a href="#" data-hover="事業内容">事業内容</a></li>
+                <li><a href="#" data-hover="実績紹介">実績紹介</a></li>
+                <li><a href="#" data-hover="お問合わせ">お問合わせ</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <h1>大王実業</h1>
-        <div class="text-center">
-          <div class="justify-between align-end border-b">
-            <h2>この街に貢献したい</h2>
-            <object type="image/svg+xml" data="./assets/city-line-05.svg" class="city-line"></object>
-          </div>
-          <div class="v-hr-green text-white"></div>
-          <h3 class="text-center animate__animated animate__fadeIn animate__delay-2s">
-            私たちは「不動産」「住宅建築」「貿易」など様々な分野で地域社会に確かな価値を提供します</h3>
-        </div>
-      </div>
-    </section>
+      </header>
 
-    <section class="section-area bg-green text-center">
-
-      <div class="section-area justify-center bg-green">
+      <section class="section-area justify-center">
         <div class="text-center items-area">
-          <div class="items-area">
-            <h1 class="margin-0 text-white">代表紹介</h1>
-            <div class="v-hr-white margin-0"></div>
+          <div class="justify-center">
+            <img src="assets\daioLogo-12.jpg" style="width: 30%;">
           </div>
-          <img src="./assets\img\portfolio\thumbnails\faceimage.png" class="img-thumbnail rounded-circle"
-            style="width:300px; margin:0 auto">
-          <div class="text-white">
-            <h3>代表取締役</h3>
-            <h2 class="margin-0">王&ensp;磊</h2>
-            <p class="margin-0">ワン&ensp;レイ</p>
-          </div>
-          <div class="v-hr-white"></div>
-          <div class="text-white">
-            <h class="text-white mb-4">社長挨拶</h>
-            <p class="text-white-75 mb-3">
-              仕事とは社会貢献だと思います。今は外壁屋根工事のほかにも不動産賃貸、空き家再生、貿易関係等を手がけていますがどの仕事においても、自分の働きが誰かの何かに貢献することに
-              直結していると思っています。それはお客様ひとりに対してなのか、ひとつのグループに対してなのか、はたまたひとつの自治体、あるいは国や全世界に対してなのか、その規模に違いがあるだけです。
-            </p>
-          </div>
+          <h3>大王実業</h3>
+          <div class="text-center">
+            <h4>この街に貢献したい</h4>
+            <div class="d-flex align-end border-b mb-20">
+              <div class="v-spacer"></div>
+              <object type="image/svg+xml" data="./assets/city-line-05.svg" class="city-line"></object>
+            </div>
+            <div class="v-hr-green text-white mb-20"></div>
+            <h5 class="text-center animate__animated animate__fadeIn animate__delay-2s">
+              私たちは「不動産」「住宅建築」「貿易」など様々な分野で地域社会に確かな価値を提供します</h5>
+            </div>
         </div>
-      </div>
-      <div class="section-area justify-center">
-        <div class="items-area">          
-          <div class="text-center text-white">
-            <h2>経歴</h2>
+      </section>
+
+      <section class="section-area bg-green text-center">
+
+        <div class="section-area justify-center bg-green">
+          <div class="text-center items-area">
+            <div class="items-area">
+              <h3 class="margin-0 text-white">代表紹介</h3>
+              <div class="v-hr-white margin-0"></div>
+            </div>
+            <img src="./assets\img\portfolio\thumbnails\faceimage.png" class="img-thumbnail rounded-circle"
+              style="width: 40%; margin:0 auto">
+            <div class="text-white">
+              <h4>代表取締役</h4>
+              <h3 class="margin-0">王&ensp;磊</h3>
+              <p class="margin-0">ワン&ensp;レイ</p>
+            </div>
             <div class="v-hr-white"></div>
-          </div>
-
-          <div class="history-margin">
-            <ul class="timeline text-white">
-              <li>
-                <dl>
-                  <dt>1989年</dt>
-                  <dd>
-                    <h4>中国・天津市で誕生</h4>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-              <li>
-                <dl>
-                  <dt>2005年</dt>
-                  <dd>
-                    <h4>バスケットボール留学生として来日</h4>
-                    <br>
-                    <h4>藤枝明誠高校入学</h4>
-                    <br>
-                    <h4>入学東海大会優勝、全国大会出場</h4>
-                    <br>
-                    <h4>静岡産業大学入学</h4>
-                    <br>
-                    <h4>国体出場・リバウンド王賞獲得</h4>
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-              <li>
-                <dl>
-                  <dt>2005</dt>
-                  <dd>
-                    <strong>出来事の見出し</strong>
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-              <li>
-                <dl>
-                  <dt>2010</dt>
-                  <dd>
-                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-              <li>
-                <dl>
-                  <dt>2018</dt>
-                  <dd>
-                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-              <li>
-                <dl>
-                  <dt>2020</dt>
-                  <dd>
-                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-              <li>
-                <dl>
-                  <dt>2025</dt>
-                  <dd>
-                    <strong>出来事の見出し</strong>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります
-                  </dd>
-                </dl>
-                <span class="border-line"></span>
-              </li>
-            </ul>
-          </div>
-
-
-
-
-
-          <!--/area1-->
-        </div>
-      </div>
-    </section>
-
-
-    </section>
-
-
-    <!-- company -->
-    <section class="section-area">
-      <div class="items-area text-center">
-        <h2>会社概要</h2>
-        <div class="v-hr-green"></div>
-        <table class="table mytable">
-          <tr>
-            <th>社名</th>
-            <td>株式会社&emsp;大王実業</td>
-          </tr>
-          <tr>
-            <th>代表者</th>
-            <td>
-              <rb>ワン&emsp;レイ</rb><br>
-              <span>王&emsp;磊</span>
-            </td>
-          </tr>
-          <tr>
-            <th>設立年</th>
-            <td>2013年</td>
-          </tr>
-          <tr>
-            <th class="align-middle">所在地</th>
-            <td>本社：藤枝市緑町1-4-21 <br>
-              岡部事務所：藤枝市岡部町内谷627-15
-            </td>
-          </tr>
-        </table>
-      </div>
-    </section>
-
-    <!-- Services-->
-    <section class="section-area">
-      <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">事業内容</h2>
-        <div class="v-hr"></div>
-        <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="fa-solid fa-hammer fs-1"></i></div>
-              <h4 class="mb-2">外壁屋根工事</h4>
-              <p class="text-secondary">建物の外壁工事やリフォーム工事全般を行っています。外壁塗装工事、金属屋根工事、防水工事等で500棟以上の実績を誇ります</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="fa-solid fs-1 fa-solid fa-rotate"></i></div>
-              <h4 class="mb-2">空き家再生</h4>
-              <p class="text-secondary">近年社会問題となっている空き家を弊社でリフォームし新たな価値を提供します</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="fa-solid fs-1 fa-city"></i></div>
-              <h4 class="mb-2">不動産事業</h4>
-              <p class="text-secondary">地域のと戸建て住宅、集合住宅、駐車場等を需要のある方にお貸ししています。</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="fa-solid fa-earth-asia fs-1"></i></div>
-              <h4 class="mb-2">中国貿易事業</h4>
-              <p class="text-secondary">日本と中国の両国の間で、需要と供給を繋ぐ重要な役割を果たします</p>
+            <div class="text-white">
+              <h3 class="text-white mb-4">社長挨拶</h3>
+              <div class="text-area">
+                <p class="text-white">
+                  仕事とは社会貢献だと思います。今は外壁屋根工事のほかにも不動産賃貸、空き家再生、貿易関係等を手がけていますがどの仕事においても、自分の働きが誰かの何かに貢献することに
+                  直結していると思っています。それはお客様ひとりに対してなのか、ひとつのグループに対してなのか、はたまたひとつの自治体、あるいは国や全世界に対してなのか、その規模に違いがあるだけです。
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Portfolio-->
-    <!-- <section class="section">
+        <div class="section-area justify-center" style="margin-bottom: 0; padding-bottom: 0;">
+          <div class="items-area" style="margin-bottom: 0; padding-bottom: 0;">
+            <div class="text-center text-white">
+              <h3>経歴</h3>
+              <div class="v-hr-white"></div>
+            </div>
+
+            <div class="history-margin">
+              <ul class="timeline text-white">
+                <li>
+                  <dl>
+                    <dt>1989年</dt>
+                    <dd>
+                      <h4>・中国・天津市で誕生</h4>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                    </dd>
+                  </dl>
+                  <span class="border-line"></span>
+                </li>
+                <li>
+                  <dl>
+                    <dt>2005年</dt>
+                    <dd>
+                      <h4>・バスケットボール留学生として来日</h4>
+                      <br>
+                      <h4>・藤枝明誠高校入学</h4>
+                      <br>
+                      <h4>・入学東海大会優勝、全国大会出場</h4>
+                      <br>
+                      <h4>・静岡産業大学入学</h4>
+                      <br>
+                      <h4>・国体出場・リバウンド王賞獲得</h4>
+                    </dd>
+                  </dl>
+                  <span class="border-line"></span>
+                </li>
+                <li>
+                  <dl>
+                    <dt>2013年</dt>
+                    <dd>
+                      <h4>大王実業創立</h4>
+                      <h4>企 業のきっかけ</h4>
+                      <p>大学卒業当時からしばらくは月給17万円で働き、悔し涙を流した夜もありましたが、その経験を経て、一度きりの人生だからこそ恐れず派手にやり切りたいと決意し起業に至りました。</p>
+                    </dd>
+                  </dl>
+                  <span class="border-line"></span>
+                </li>
+                <li>
+                  <dl>
+                    <dt>2022年</dt>
+                    <dd>
+                      <p>
+                        妻と子5人の7人家族で藤枝市岡部町で暮らしています。会社としての仕事のほかにも、一般社団法人藤枝青年会議所(JC)に所属し活動したり、男子中学生のバスケットチームを作って、志の高い選手の育成を行っておりその全てが社会貢献であると思っています。
+                        そしてそんな私も、この社会の恩恵を受ける一員であると心得ます。
+                      </p>
+                    </dd>
+                  </dl>
+                  <span class="border-line"></span>
+                </li>
+                <li>
+                  <dl>現在</dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-area justify-center">
+        <div class="items-area text-center">
+          <h3>会社概要</h3>
+          <div class="v-hr-green"></div>
+          <div class="justify-center margin-y-40">
+            <table class="table mytable">
+              <tr>
+                <th>社名</th>
+                <td>株式会社&emsp;大王実業</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>
+                  <rb>ワン&emsp;レイ</rb><br>
+                  <span>王&emsp;磊</span>
+                </td>
+              </tr>
+              <tr>
+                <th>設立年</th>
+                <td>2013年</td>
+              </tr>
+              <tr>
+                <th class="align-middle">所在地</th>
+                <td>本社：藤枝市緑町1-4-21 <br>
+                  岡部事務所：藤枝市岡部町内谷627-15
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- Services-->
+      <section class="section-area">
+        <div class="container px-4 px-lg-5">
+          <h3 class="text-center mt-0">事業内容</h3>
+          <div class="v-hr-green"></div>
+          <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2"><i class="fa-solid fa-hammer fs-1"></i></div>
+                <h4 class="mb-2">外壁屋根工事</h4>
+                <p class="text-secondary">建物の外壁工事やリフォーム工事全般を行っています。外壁塗装工事、金属屋根工事、防水工事等で500棟以上の実績を誇ります</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2"><i class="fa-solid fs-1 fa-solid fa-rotate"></i></div>
+                <h4 class="mb-2">空き家再生</h4>
+                <p class="text-secondary">近年社会問題となっている空き家を弊社でリフォームし新たな価値を提供します</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2"><i class="fa-solid fs-1 fa-city"></i></div>
+                <h4 class="mb-2">不動産事業</h4>
+                <p class="text-secondary">地域のと戸建て住宅、集合住宅、駐車場等を需要のある方にお貸ししています。</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center">
+              <div class="mt-5">
+                <div class="mb-2"><i class="fa-solid fa-earth-asia fs-1"></i></div>
+                <h4 class="mb-2">中国貿易事業</h4>
+                <p class="text-secondary">日本と中国の両国の間で、需要と供給を繋ぐ重要な役割を果たします</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio-->
+      <!-- <section class="section">
       <div class="contents-area">
         <h2 class="text-center mt-0">実績紹介</h2>
         <div class="v-hr"></div>
@@ -614,145 +597,154 @@
           </div>
         </div>
       </div> -->
-    <!-- Call to action-->
-    <section class="page-section bg-dark text-white">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">こんな活動もしています</h2>
-        <hr class="divider" />
-        <a class="btn btn-light btn-xl" href="/">バスケチームやその他の活動のホームページへ</a>
-      </div>
-    </section>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0">お問い合わせフォーム</h2>
-            <hr class="divider" />
-            <p class="text-muted mb-5">お仕事の依頼や質問などお気軽にご相談ください</p>
-          </div>
+      <!-- Call to action-->
+      <section class="page-section bg-dark text-white">
+        <div class="container px-4 px-lg-5 text-center">
+          <h2 class="mb-4">こんな活動もしています</h2>
+          <hr class="divider" />
+          <a class="btn btn-light btn-xl" href="/">バスケチームやその他の活動のホームページへ</a>
         </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-          <div class="col-lg-6">
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms -->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-              <!-- Name input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                  data-sb-validations="required" />
-                <label for="name">お名前</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">お名前を記入してください</div>
-              </div>
-              <!-- Email address input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                  data-sb-validations="required,email" />
-                <label for="email">メールアドレス</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">メールアドレスを記入してください</div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">無効なメールアドレスです</div>
-              </div>
-              <!-- Phone number input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                  data-sb-validations="required" />
-                <label for="phone">電話番号</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">電話番号を記入してください</div>
-              </div>
-              <!-- Message input-->
-              <div class="form-floating mb-3">
-                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                  style="height: 10rem" data-sb-validations="required"></textarea>
-                <label for="message">メッセージ</label>
-                <div class="invalid-feedback" data-sb-feedback="message:required">お問い合わせ内容を記入してください</div>
-              </div>
-              <!-- Submit success message-->
-              <!---->
-              <!-- This is what your users will see when the form-->
-              <!-- has successfully submitted-->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
-                  <br />
-                  <a
-                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+      </section>
+      <!-- Contact-->
+      <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+              <h2 class="mt-0">お問い合わせフォーム</h2>
+              <hr class="divider" />
+              <p class="text-muted mb-5">お仕事の依頼や質問などお気軽にご相談ください</p>
+            </div>
+          </div>
+          <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- * * SB Forms Contact Form * *-->
+              <!-- * * * * * * * * * * * * * * *-->
+              <!-- This form is pre-integrated with SB Forms.-->
+              <!-- To make this form functional, sign up at-->
+              <!-- https://startbootstrap.com/solution/contact-forms -->
+              <!-- to get an API token!-->
+              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <!-- Name input-->
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                    data-sb-validations="required" />
+                  <label for="name">お名前</label>
+                  <div class="invalid-feedback" data-sb-feedback="name:required">お名前を記入してください</div>
                 </div>
-              </div>
-              <!-- Submit error message-->
-              <!---->
-              <!-- This is what your users will see when there is-->
-              <!-- an error submitting the form-->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
-              </div>
-              <!-- Submit Button-->
-              <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
-                  type="submit">Submit</button></div>
-            </form>
+                <!-- Email address input-->
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                    data-sb-validations="required,email" />
+                  <label for="email">メールアドレス</label>
+                  <div class="invalid-feedback" data-sb-feedback="email:required">メールアドレスを記入してください</div>
+                  <div class="invalid-feedback" data-sb-feedback="email:email">無効なメールアドレスです</div>
+                </div>
+                <!-- Phone number input-->
+                <div class="form-floating mb-3">
+                  <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                    data-sb-validations="required" />
+                  <label for="phone">電話番号</label>
+                  <div class="invalid-feedback" data-sb-feedback="phone:required">電話番号を記入してください</div>
+                </div>
+                <!-- Message input-->
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                    style="height: 10rem" data-sb-validations="required"></textarea>
+                  <label for="message">メッセージ</label>
+                  <div class="invalid-feedback" data-sb-feedback="message:required">お問い合わせ内容を記入してください</div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                  <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    To activate this form, sign up at
+                    <br />
+                    <a
+                      href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                  </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                  <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
+                    type="submit">Submit</button></div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark text-white">
-      <div id="footerwrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4" style="margin-bottom:30px;">
-              <h4>会社住所</h4>
-              <hr class="wid-line my-2" />
-              <p class="text-light">
-                <i class="fa-solid fa-location-dot"></i>&ensp;本社&ensp;静岡県藤枝市岡部<br>
-                <i class="fa-solid fa-location-dot"></i>&ensp;岡部事務所&ensp;静岡県藤枝市岡部
-              </p>
+      </section>
+
+      <!-- Footer-->
+      <footer class="py-5 bg-dark text-white">
+        <div id="footerwrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4" style="margin-bottom:30px;">
+                <h4>会社住所</h4>
+                <hr class="wid-line my-2" />
+                <p class="text-light">
+                  <i class="fa-solid fa-location-dot"></i>&ensp;本社&ensp;静岡県藤枝市岡部<br>
+                  <i class="fa-solid fa-location-dot"></i>&ensp;岡部事務所&ensp;静岡県藤枝市岡部
+                </p>
+              </div>
+              <div class="col-lg-4" style="margin-bottom:30px;">
+                <h4>電話番号&ensp;FAX</h4>
+                <hr class="wid-line my-2" />
+                <!-- <div class="hline-w"></div> -->
+                <p><i class="fa-solid fa-phone"></i>&ensp;054-631-6988<br />
+                  <i class="fa-solid fa-fax"></i>&ensp;054-631-6989<br />
+                </p>
+              </div>
+              <div class="col-lg-4" style="margin-bottom:30px;">
+                <h4>Links</h4>
+                <hr class="wid-line my-2" />
+                <div class="hline-w"></div>
+                <p>
+                  <a href="#">
+                    <istyle= class="fa-brands fa-twitter" style="font-size:30px; color:#1DA1F2;"></i></i>
+                  </a>
+                  &ensp;&ensp;<a href="#"><i class="fa-brands fa-facebook"
+                      style="font-size:35px; color:#1877f2;"></i></a>
+                  &ensp;&ensp;<a href="#"><i class="fa-brands fa-instagram"
+                      style="font-size:35px; color:#CF2E92;"></i></a>
+                </p>
+              </div>
             </div>
-            <div class="col-lg-4" style="margin-bottom:30px;">
-              <h4>電話番号&ensp;FAX</h4>
-              <hr class="wid-line my-2" />
-              <!-- <div class="hline-w"></div> -->
-              <p><i class="fa-solid fa-phone"></i>&ensp;054-631-6988<br />
-                <i class="fa-solid fa-fax"></i>&ensp;054-631-6989<br />
-              </p>
+            <div class="container px-4 px-lg-5">
+              <div class="small text-center text-muted">Copyright &copy; 2022 - 株式会社 大王実業</div>
             </div>
-            <div class="col-lg-4" style="margin-bottom:30px;">
-              <h4>Links</h4>
-              <hr class="wid-line my-2" />
-              <div class="hline-w"></div>
-              <p>
-                <a href="#">
-                  <istyle= class="fa-brands fa-twitter" style="font-size:30px; color:#1DA1F2;"></i></i>
-                </a>
-                &ensp;&ensp;<a href="#"><i class="fa-brands fa-facebook" style="font-size:35px; color:#1877f2;"></i></a>
-                &ensp;&ensp;<a href="#"><i class="fa-brands fa-instagram"
-                    style="font-size:35px; color:#CF2E92;"></i></a>
-              </p>
-            </div>
-          </div>
-          <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted">Copyright &copy; 2022 - 株式会社 大王実業</div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+
+    <!-- loading用コンテナ -->
+    </div>
+
+
     <!-- Bootstrap core JS-->
-    <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js"></script>
+    <!-- <script src="bootstrap-5.0.2-dist\js\bootstrap.min.js"></script> -->
     <!-- Core theme JS-->
-    <script src="http://daioworks.local\wp-content\themes\bootstrapThemes/js/scripts.js"></script>
+    <!-- <script src="http://daioworks.local\wp-content\themes\bootstrapThemes/js/scripts.js"></script> -->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+
 
     <!-- 自分のjs -->
     <script src="./js/myjs.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/loading.js"></script>
   </body>
 
 </html>

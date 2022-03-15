@@ -2,7 +2,7 @@
 
 /*タイムライン全体の設定*/
 .timeline {
-	max-width: 400px;
+	max-width: 440px;
 	width: 100%;
 	margin: 50px auto;
 	padding: 0 30px;
@@ -16,7 +16,7 @@
 }
 
 .timeline dl {
-	margin: 0 0 20px 3em;
+	margin: 0 0 20px 2em;
 }
 
 .timeline dd strong {
