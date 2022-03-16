@@ -94,6 +94,10 @@ h2 {
 	justify-self: start;
 }
 
+.justify-self-end {
+	justify-self: end;
+}
+
 .align-center {
 	display: flex;
 	align-items: center;
@@ -111,6 +115,10 @@ h2 {
 
 .text-left {
 	text-align: left;
+}
+
+.text-rigth {
+	text-align: right;
 }
 
 /* スペーサー */
@@ -134,6 +142,7 @@ h2 {
 	width: auto;
 	line-height: 200%;
 	padding: 0 8px;
+	font-size: 14px;
 }
 
 /* ボーダー */
@@ -141,6 +150,8 @@ h2 {
 .border-b {
 	border-bottom: 1px solid #0c6b41;
 }
+
+/* セクションタイトル */
 
 /* 背景色 */
 
@@ -163,7 +174,6 @@ h2 {
 .main-bg-image {
 	width: 100%;
 	height: 700px;
-	background: wheat;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
@@ -174,7 +184,7 @@ h2 {
 }
 
 .imges {
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .img1 {
@@ -218,7 +228,7 @@ h2 {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	z-index: 2;
-	border: #7c7c7c7c 1px solid;
+	border: #0c6b41 10px solid;
 }
 
 /* クラウドラインとメインロゴ関係 */
@@ -289,6 +299,62 @@ h2 {
 	to {
 		transform: translateX(-200%);
 	}
+}
+
+/* セクションタイトル */
+.title-box {
+	color: white;
+	width: 40%;
+	max-width: 400px;
+	background: #0c6b41;
+	border-radius: 0 60px 60px 0;
+	padding-right: 40px;
+}
+
+.title-box > div {
+	margin: 10px 4px;
+}
+
+.title-box h2 {
+	border-bottom: #579435 4px solid;
+	margin: 0;
+}
+
+.title-box h4 {
+	margin: 0;
+	padding: 0;
+}
+
+/* リスト関係 */
+.list-box {
+	margin-top: 20px;
+	border-radius: 10px;
+	border-top: #579435 2px solid;
+	border-bottom: #579435 2px solid;
+	position: relative;
+	width: auto;
+}
+
+.list-box > h5 {
+	position: absolute;
+	margin: 0;
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	z-index: 2;
+	background: #0c6b41;
+}
+
+.list-items {
+	font-size: 14px;
+	line-height: 60px;
+}
+
+.list-items > h5 {
+	text-align: center;
+	font-size: 14px;
 }
 
 /* カード関係 */

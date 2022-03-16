@@ -21,7 +21,7 @@
 /*========= 画面遷移のためのCSS ===============*/
 
 body {
-	background: #333;
+	/* background: #333; */
 }
 
 body.appear {
