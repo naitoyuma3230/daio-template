@@ -1,20 +1,13 @@
-$(function () {
-  var items = document.querySelectorAll(".circle a");
+$(".openbtn1").click(function () {
+	//ボタンがクリックされたら
+	$(this).toggleClass("active"); //ボタン自身に activeクラスを付与し
+	$("#g-nav").toggleClass("panelactive"); //ナビゲーションにpanelactiveクラスを付与
+	$(".circle-bg").toggleClass("circleactive"); //丸背景にcircleactiveクラスを付与
+});
 
-  for (var i = 0, l = items.length; i < l; i++) {
-    items[i].style.left =
-      (50 - 35 * Math.cos(-0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(
-        4
-      ) + "%";
-
-    items[i].style.top =
-      (50 + 35 * Math.sin(-0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(
-        4
-      ) + "%";
-  }
-
-  document.querySelector(".menu-button").onclick = function (e) {
-    e.preventDefault();
-    document.querySelector(".circle").classList.toggle("open");
-  };
+$("#g-nav a").click(function () {
+	//ナビゲーションのリンクがクリックされたら
+	$(".openbtn1").removeClass("active"); //ボタンの activeクラスを除去し
+	$("#g-nav").removeClass("panelactive"); //ナビゲーションのpanelactiveクラスを除去
+	$(".circle-bg").removeClass("circleactive"); //丸背景のcircleactiveクラスを除去
 });

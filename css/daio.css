@@ -1,13 +1,12 @@
 html {
 	height: 100%;
+	width: 100%;
+	margin: 0;
 }
 body {
 	font-family: "Shippori Mincho";
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: wrap;
 	margin: 0;
+	width: 100%;
 	height: 100%;
 }
 
@@ -44,6 +43,20 @@ h2 {
 	list-style: none;
 }
 
+/* マージン */
+.margin-y-40 {
+	margin: 40px 0;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.margin-0 {
+	margin: 0;
+}
+
+/* Flexアイテム */
 .d-flex {
 	display: flex;
 }
@@ -51,14 +64,6 @@ h2 {
 .d-column {
 	display: flex;
 	flex-direction: column;
-}
-
-.margin-y-40 {
-	margin: 40px 0;
-}
-
-.margin-0 {
-	margin: 0;
 }
 
 .justify-center {
@@ -98,34 +103,7 @@ h2 {
 	align-items: flex-end;
 }
 
-.v-spacer {
-	margin: 0 auto;
-}
-
-.mb-20 {
-	margin-bottom: 20px;
-}
-
-.contents-area {
-	max-width: 1100px;
-	width: 100%;
-}
-
-.items-area {
-	max-width: 440px;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin: 40px 0;
-}
-
-.text-area {
-	margin: 0 0.8rem;
-}
-
-.border-b {
-	border-bottom: 1px solid #0c6b41;
-}
+/* 寄せ */
 
 .text-center {
 	text-align: center;
@@ -135,17 +113,42 @@ h2 {
 	text-align: left;
 }
 
+/* スペーサー */
+
+.v-spacer {
+	margin: 0 auto;
+}
+
+/* エリア width */
 .section-area {
 	margin: 20px auto;
-	padding: 40px 0;
 	width: 100%;
 	min-height: 40rem;
 }
+
+.items-area {
+	max-width: 390px;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.text-area {
+	padding: 0 0.8rem;
+}
+
+/* ボーダー */
+
+.border-b {
+	border-bottom: 1px solid #0c6b41;
+}
+
+/* 背景色 */
 
 .bg-green {
 	background-color: #0c6b41;
 }
 
+/* 強調太線 */
 .v-hr-green {
 	width: 80px;
 	height: 10px;
@@ -160,11 +163,7 @@ h2 {
 	margin: 20px auto 20px;
 }
 
-.v-nav {
-	margin: 0px 0;
-	width: 100%;
-}
-
+/* ロゴ系 */
 .nav-icon {
 	width: 30px;
 	height: 30px;
@@ -173,11 +172,145 @@ h2 {
 	flex-shrink: 0;
 }
 
-.city-line {
-	max-width: 200px;
-	margin-bottom: 0;
-	padding-bottom: 0;
+/* ホームセクション */
+.main-bg-image {
+	width: 100%;
+	height: 900px;
+	background: wheat;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"img1 img1 img2"
+		"img1 img1 img2"
+		"img5 img3 img3"
+		"img5 img4 img4";
 }
+
+.imges {
+	opacity: 0.6;
+}
+
+.img1 {
+	grid-area: img1;
+	background-image: url(../assets/img/thumbnails/meia.JPG);
+	background-size: cover;
+}
+
+.img2 {
+	grid-area: img2;
+	background-image: url(../assets/img/thumbnails/a1a.JPG);
+	background-size: cover;
+}
+
+.img3 {
+	grid-area: img3;
+	background-image: url(../assets/img/thumbnails/p1a.JPG);
+	transform: scale(-1, 1);
+	background-size: cover;
+}
+
+.img4 {
+	grid-area: img4;
+	background-image: url(../assets/img/thumbnails/r2a.JPG);
+	background-size: cover;
+}
+
+.img5 {
+	grid-area: img5;
+	background-image: url(../assets/img/thumbnails/h3a.JPG);
+	background-size: cover;
+}
+
+.main-contents {
+	border-radius: 10px;
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	z-index: 2;
+	border: #7c7c7c7c 1px solid;
+}
+
+/* クラウドラインとメインロゴ関係 */
+.cloud-loop {
+	position: relative;
+	display: flex;
+	/* border: 1px solid black; */
+	overflow: hidden;
+	height: 220px;
+}
+
+.main-logo {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	z-index: 2;
+}
+
+.cloud-line {
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	width: auto;
+}
+
+.cloud-line img:first-child {
+	animation: loop2 200s linear infinite;
+}
+
+/* シティーライン関係 */
+
+.loop-img {
+	display: flex;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.loop-img img {
+	width: auto;
+}
+
+.loop-img img:first-child {
+	animation: loop 50s -25s linear infinite;
+}
+
+.loop-img img:last-child {
+	animation: loop2 50s linear infinite;
+}
+
+@keyframes loop {
+	0% {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes loop2 {
+	0% {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-200%);
+	}
+}
+
+/* カード関係 */
+.card-outline {
+	border-radius: 8px;
+	max-width: 440px;
+	padding: 10px;
+}
+
+/* 写真関係 */
 
 .rounded-circle {
 	border-radius: 50% !important;
@@ -191,6 +324,8 @@ h2 {
 	max-width: 100%;
 	height: auto;
 }
+
+/* テーブル関係 */
 
 .mytable {
 	font-size: 1rem;
