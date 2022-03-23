@@ -56,6 +56,10 @@ h2 {
 	margin: 0;
 }
 
+.marginx-10 {
+	margin: 0 10px;
+}
+
 /* Flexアイテム */
 .d-flex {
 	display: flex;
@@ -122,20 +126,18 @@ h2 {
 }
 
 /* スペーサー */
-
 .v-spacer {
 	margin: 0 auto;
 }
 
-/* エリア width */
+/* エリア  */
 .section-area {
 	width: 100%;
 	margin: 30px 0;
 }
 
 .items-area {
-	max-width: 320px;
-	width: 100%;
+	max-width: 80vw;
 }
 
 .text-area {
@@ -169,7 +171,7 @@ h2 {
 /* ホームセクション */
 .main-bg-image {
 	width: 100%;
-	height: 700px;
+	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
@@ -304,7 +306,7 @@ h2 {
 	max-width: 400px;
 	background: #0c6b41;
 	border-radius: 0 60px 60px 0;
-	padding: 4px 46px 4px 4px;
+	padding: 4px 46px 4px 0px;
 	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
 }
 
@@ -315,13 +317,13 @@ h2 {
 	border-radius: 0 70px 70px 0;
 	padding-right: 40px;
 	padding-bottom: 4px;
-	border-top: white 2px solid;
-	border-bottom: white 2px solid;
-	border-right: white 2px solid;
+	border-top: white 0.5px solid;
+	border-bottom: white 0.5px solid;
+	border-right: white 0.5px solid;
 }
 
 .title-box h2 {
-	border-bottom: #579435 4px solid;
+	border-bottom: #579435 1px solid;
 	margin: 0;
 }
 
@@ -330,12 +332,19 @@ h2 {
 	padding: 0;
 }
 
+/* セクションタイトル2 */
+.title-box2 > h2 {
+	color: #0c6b41;
+}
+.title-box2 > h2 {
+	border-bottom: #579435 1px solid;
+	margin-bottom: 2px;
+}
+
 /* リスト関係 */
 .list-box {
 	margin: 40px 0;
 	border-radius: 10px;
-	/* border-top: #579435 4px solid; */
-
 	position: relative;
 	width: auto;
 	padding: 0 6px;
@@ -345,7 +354,7 @@ h2 {
 .list-box:after {
 	content: "";
 	width: 20px;
-	height: 30px;
+	height: 40px;
 	position: absolute;
 	display: inline-block;
 }
@@ -371,7 +380,7 @@ h2 {
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	z-index: 2;
-	background: #0c6b41;
+	/* background: #0c6b41; */
 }
 
 .list-items {
@@ -385,7 +394,7 @@ h2 {
 	font-size: 14px;
 }
 
-/* カード関係 */
+/* 自己紹介カード関係 */
 .card-outline {
 	width: 100%;
 	border-radius: 8px;
@@ -401,6 +410,82 @@ h2 {
 
 .card-contents {
 	margin: 20 0px;
+}
+
+/* スライドカード */
+.slide-cards-area {
+	overflow: auto;
+	width: auto;
+	display: flex;
+	padding: 10px;
+}
+
+.scroll-area {
+	display: flex;
+}
+
+.slide-card {
+	background: white;
+	width: 240px;
+	padding: 10px;
+	border: 1px rgb(192, 192, 192) solid;
+	margin-right: -1px;
+	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
+}
+
+.slide-card:first-child {
+	border-radius: 20px 0 0 20px;
+	margin-left: 10px;
+}
+
+.slide-card:last-child {
+	border-radius: 0 20px 20px 0;
+	margin-right: 10px;
+}
+
+.card-catch-img {
+	position: relative;
+	border-radius: 8px;
+	background-size: cover;
+	height: 160px;
+	background-position: center;
+}
+.card-catch-img.yane {
+	background-image: url(../assets/img/illust/undraw_under_construction_46pa.png);
+}
+
+.card-catch-img.akiya {
+	background-image: url(../assets/img/illust/undraw_House_searching_re_stk8.png);
+}
+
+.card-catch-img.fudo {
+	background-image: url(../assets/img/illust/undraw_apartment_rent_o0ut.png);
+}
+.card-catch-img.boueki {
+	background-image: url(../assets/img/illust/undraw_connected_world_wuay.png);
+}
+.card-catch-img > div {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	z-index: 2;
+}
+
+.slide-card-contents {
+	padding: 10px;
+	font-size: 14px;
+	line-height: 2;
+}
+
+/* アイコン */
+
+.product-icon {
+	font-size: 20px;
+	color: rgb(80, 150, 80);
+	padding: 6px;
+	margin-right: 2px;
 }
 
 /* 写真関係 */

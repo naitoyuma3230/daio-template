@@ -32,7 +32,7 @@
 	top: 0;
 	width: 2px; /*線の太さ*/
 	height: 0; /*はじめは高さを0に*/
-	background: #ccc;
+	background: #0c6b41;
 }
 
 /*タイムラインの見出し横の丸の位置と形状*/
@@ -45,6 +45,7 @@
 	height: 14px;
 	background: white;
 	border-radius: 50%;
+	background-color: #0c6b41;
 }
 
 .timeline dl {
