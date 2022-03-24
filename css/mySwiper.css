@@ -36,8 +36,7 @@
 }
 
 .swiper-slide {
-	width: 300px;
-	height: 280px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
 }
@@ -45,7 +44,7 @@
 .swiper-background {
 	position: relative;
 	border-radius: 20px;
-	width: 90%;
+	width: 400px;
 	height: 200px;
 }
 .item1 {
