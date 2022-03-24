@@ -26,6 +26,7 @@
 	content: "\f137";
 	color: #fff; /* 色を白に */
 	margin-left: 20px;
+	user-select: none;
 }
 .swiper-button-next:after {
 	font-family: "Font Awesome 5 Free";
@@ -33,6 +34,7 @@
 	content: "\f138";
 	color: #fff;
 	margin-right: 20px;
+	user-select: none;
 }
 
 .swiper-slide {
@@ -44,8 +46,9 @@
 .swiper-background {
 	position: relative;
 	border-radius: 20px;
-	width: 400px;
-	height: 200px;
+	width: 100%;
+	min-width: 240px;
+	min-height: 200px;
 }
 .item1 {
 	/* background: rgb(245, 179, 197); */
@@ -61,10 +64,10 @@
 	position: absolute;
 	border: 1px solid white;
 	border-radius: 20px;
-	bottom: 10px;
+	bottom: 0;
 	left: 0;
 	width: 40%;
-	height: 30%;
+	height: 40%;
 }
 .sub-title {
 	background: wheat;
