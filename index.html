@@ -35,21 +35,22 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
+		<!-- swiper.css -->
+		<link rel="stylesheet" href="node_modules\swiper\swiper-bundle.min.css" />
+
 		<!-- mycss -->
 		<link rel="stylesheet" href="./css/daio.css " />
 		<link rel="stylesheet" href="./css/nav.css" />
 		<link rel="stylesheet" href="./css/scroll.css" />
 		<link rel="stylesheet" href="./css/scrollDown.css" />
+		<link rel="stylesheet" href="./css/mySwiper.css" />
 		<!-- <link rel="stylesheet" href="./css/loading.css" /> -->
 		<!-- jquery -->
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script src="./js\jquery\jquery.inview.min.js"></script>
-		<!-- jqueryライブラリ -->
-		<script src="./js/jquery/jquery.inview.min.js"></script>
+		<script src="node_modules\jquery\dist\jquery.min.js"></script>
+
+		<!-- swiper.js -->
+		<script src="node_modules\swiper\swiper-bundle.min.js"></script>
+		<script src="js/mySwiper.js"></script>
 	</head>
 
 	<body>
@@ -190,6 +191,37 @@
 					</div>
 				</section>
 
+				<section>
+					<!-- スライダーのメインコンテナの div 要素（必須） -->
+					<div class="swiper">
+						<!-- スライドを囲む div 要素（必須） -->
+						<div class="swiper-wrapper">
+							<!-- それぞれのスライドの div 要素（必須） -->
+							<div class="swiper-slide text-center">
+								<div>
+									<div class="swiper-title">Main Title</div>
+									<div class="swiper-background item1"></div>
+								</div>
+							</div>
+							<div class="swiper-slide text-center">
+								<div>
+									<div class="swiper-title">Main Title</div>
+									<div class="swiper-background item1"></div>
+								</div>
+							</div>
+						</div>
+						<!-- ページネーションの div 要素（省略可能） -->
+						<div class="swiper-pagination"></div>
+
+						<!-- ナビゲーションボタンの div 要素（省略可能） -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<!-- スクロールバーの div 要素（省略可能） -->
+						<!-- <div class="swiper-scrollbar"></div> -->
+					</div>
+				</section>
+
 				<section class="section-area justify-start">
 					<div class="title-box2 marginx-10">
 						<h2 class="text-left">ABOUT US</h2>
@@ -213,13 +245,13 @@
 								<p class="margin-0">ワン&ensp;レイ</p>
 							</div>
 							<div class="v-hr-white"></div>
-							<h3 class="text-white mb-4">社長挨拶</h3>
+							<h4 class="text-white">社長挨拶</h4>
 							<div class="justify-center">
 								<div class="text-area">
-									<h4>
+									<p>
 										仕事とは社会貢献だと思います。今は外壁屋根工事のほかにも不動産賃貸、空き家再生、貿易関係等を手がけていますがどの仕事においても、自分の働きが誰かの何かに貢献することに
 										直結していると思っています。それはお客様ひとりに対してなのか、ひとつのグループに対してなのか、はたまたひとつの自治体、あるいは国や全世界に対してなのか、その規模に違いがあるだけです。
-									</h4>
+									</p>
 								</div>
 							</div>
 						</div>
