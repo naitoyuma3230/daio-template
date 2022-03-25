@@ -39,6 +39,7 @@
 
 .swiper-slide {
 	margin-bottom: 30px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -46,11 +47,11 @@
 .swiper-background {
 	position: relative;
 	border-radius: 20px;
-	width: 100%;
-	min-width: 240px;
+	/* width: 100%; */
+	min-width: 300px;
 	min-height: 200px;
 }
-.item1 {
+.slide-item1 {
 	/* background: rgb(245, 179, 197); */
 	background-image: url(../assets/img/thumbnails/a2a.png);
 	background-size: cover;
@@ -65,10 +66,23 @@
 	border: 1px solid white;
 	border-radius: 20px;
 	bottom: 0;
-	left: 0;
 	width: 40%;
 	height: 40%;
 }
+
+.sub-img.right {
+	right: 0;
+}
+
+.sub-img.left {
+	left: 0;
+}
+
+.sub-img-text {
+	color: white;
+	font-size: 1rem;
+}
+
 .sub-title {
 	background: wheat;
 	position: absolute;
