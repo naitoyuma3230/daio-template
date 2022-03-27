@@ -5,9 +5,20 @@ $(".openbtn1").click(function () {
 	$(".circle-bg").toggleClass("circleactive"); //丸背景にcircleactiveクラスを付与
 });
 
-$("#g-nav a").click(function () {
+$("#g-nav div").click(function () {
 	//ナビゲーションのリンクがクリックされたら
 	$(".openbtn1").removeClass("active"); //ボタンの activeクラスを除去し
 	$("#g-nav").removeClass("panelactive"); //ナビゲーションのpanelactiveクラスを除去
 	$(".circle-bg").removeClass("circleactive"); //丸背景のcircleactiveクラスを除去
+});
+
+// メニュー画面からのスクロール
+$("#move-home").on("click", function () {
+	$("html,body").animate({ scrollTop: $("#home").offset().top });
+});
+$("#move-service").on("click", function () {
+	$("html,body").animate({ scrollTop: $("#service").offset().top });
+});
+$("#move-production,.test").on("click", function () {
+	$("html,body").animate({ scrollTop: $("#production").offset().top });
 });

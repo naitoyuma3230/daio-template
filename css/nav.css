@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /*========= ナビゲーションのためのCSS ===============*/
+.menu-items > div {
+	cursor: pointer;
+}
 
 /*アクティブになったエリア*/
 #g-nav.panelactive {
