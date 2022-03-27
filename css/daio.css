@@ -48,6 +48,10 @@ h2 {
 	margin: 40px 0;
 }
 
+.margin-top-20 {
+	margin-top: 20px;
+}
+
 .margin-b-40 {
 	margin-bottom: 40px;
 }
@@ -121,6 +125,11 @@ h2 {
 
 .align-end {
 	align-items: flex-end;
+}
+
+.grid-2row {
+	display: grid;
+	grid-row: 1fr 1fr;
 }
 
 /* 寄せ */
@@ -323,6 +332,11 @@ h2 {
 }
 
 /* リスト関係 */
+.history-area {
+	background: #0c6b41;
+	color: white;
+}
+
 .list-box {
 	margin: 40px 0;
 	border-radius: 10px;
@@ -466,7 +480,7 @@ h2 {
 	margin: 2vw;
 	padding: 2vh;
 	border-radius: 4px;
-	background: #c3ffa2;
+	/* background: #c3ffa2; */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas:
@@ -625,13 +639,30 @@ h2 {
 	background-size: cover;
 }
 
+.swiper-card-outline .swiper-slide {
+	border: 1px solid rgb(170, 170, 170);
+	border-radius: 20px;
+	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
+}
+
 /* タイトルバックイラスト */
+.bg-title {
+	width: auto;
+	border-bottom: 2px solid rgb(150, 150, 150);
+	margin: 60px 20px;
+}
+
 .bg-title-img {
-	position: relative;
 	background-size: cover;
-	width: 24vw;
-	height: 17vw;
-	text-align: center;
+	width: 20vw;
+	height: 14vw;
+}
+
+.icon-fromt-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	background: white;
+	color: rgb(100, 100, 100);
 }
 
 .house {
@@ -644,21 +675,6 @@ h2 {
 
 .park {
 	background-image: url(../assets/img/illust/undraw_A_day_at_the_park_re_9kxj.png);
-}
-
-.bg-title-img div {
-	position: absolute;
-	margin: 0;
-	bottom: -40px;
-	font-size: 16px;
-	font-weight: bold;
-	color: rgb(50, 50, 50);
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	z-index: 2;
-	white-space: nowrap;
 }
 
 .title-illust {
@@ -692,11 +708,11 @@ h2 {
 /* テーブル関係 */
 
 .mytable {
-	font-size: 1rem;
+	font-size: 1.4rem;
 	width: 100%;
+	max-width: 400px;
 	border-collapse: collapse;
 	box-sizing: border-box;
-	border: 1px solid #0d804c;
 }
 
 .mytable th {

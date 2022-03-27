@@ -68,14 +68,22 @@
 				<div class="openbtn1"><span></span><span></span><span></span></div>
 				<nav id="g-nav">
 					<div id="g-nav-list">
-						<ul>
-							<li><a href="#">ホーム</a></li>
-							<li><a href="#">代表挨拶</a></li>
-							<li><a href="#">経歴</a></li>
-							<li><a href="#">会社概要</a></li>
-							<li><a href="#">事業内容</a></li>
-							<li><a href="#">実績</a></li>
-						</ul>
+						<!-- <div class="grid-2row">
+							<span><a href="#">ホーム</a></span>
+							<span><a href="#">代表挨拶</a></span>
+							<span><a href="#">経歴</a></span>
+							<span><a href="#">会社概要</a></span>
+							<span><a href="#">事業内容</a></span>
+							<span><a href="#">実績</a></span>
+						</div> -->
+						<div class="menu-items grid-2row">
+							<div>ホーム</div>
+							<div>実績</div>
+							<div>ホーム</div>
+							<div>実績</div>
+							<div>ホーム</div>
+							<div>実績</div>
+						</div>
 					</div>
 				</nav>
 				<div class="circle-bg"></div>
@@ -215,13 +223,12 @@
 							<div class="img2"></div>
 						</div>
 					</div>
-					<div class="justify-center margin-y-40">
-						<div class="bg-title-img house">
-							<div>一般住宅</div>
-						</div>
+					<div class="d-flex align-end bg-title">
+						<div class="bg-title-img house"></div>
+						<div class="icon-fromt-title">一般住宅</div>
 					</div>
 					<!-- スライダーのメインコンテナの div 要素（必須） -->
-					<div class="swiper m-bottom-40">
+					<div class="swiper m-bottom-40 swiper-card-outline">
 						<!-- スライドを囲む div 要素（必須） -->
 						<div class="swiper-wrapper">
 							<!-- それぞれのスライドの div 要素（必須） -->
@@ -266,13 +273,12 @@
 						<div class="swiper-button-next"></div>
 					</div>
 
-					<div class="justify-center margin-y-40">
-						<div class="bg-title-img apart">
-							<div>アパート・工場・学校</div>
-						</div>
+					<div class="d-flex align-end margin-y-40 bg-title">
+						<div class="bg-title-img apart"></div>
+						<div class="icon-fromt-title">アパート・工場・学校</div>
 					</div>
 					<!-- スライダーのメインコンテナの div 要素（必須） -->
-					<div class="swiper m-bottom-40">
+					<div class="swiper m-bottom-40 swiper-card-outline">
 						<!-- スライドを囲む div 要素（必須） -->
 						<div class="swiper-wrapper">
 							<!-- それぞれのスライドの div 要素（必須） -->
@@ -354,13 +360,12 @@
 						<!-- <div class="swiper-scrollbar"></div> -->
 					</div>
 
-					<div class="justify-center margin-y-40">
-						<div class="bg-title-img park">
-							<div>公園遊具の設置</div>
-						</div>
+					<div class="d-flex align-end margin-y-40 bg-title">
+						<div class="bg-title-img park"></div>
+						<div class="icon-fromt-title">公園遊具の設置</div>
 					</div>
 					<!-- スライダーのメインコンテナの div 要素（必須） -->
-					<div class="swiper m-bottom-40">
+					<div class="swiper m-bottom-40 swiper-card-outline">
 						<!-- スライドを囲む div 要素（必須） -->
 						<div class="swiper-wrapper">
 							<!-- それぞれのスライドの div 要素（必須） -->
@@ -421,7 +426,7 @@
 				<section class="section-area justify-center text-center">
 					<div class="justify-center bg-green card-outline items-area">
 						<div class="text-center text-white card-inline">
-							<div class="card-contents margin-y-40">
+							<div class="card-contents margin-top-20">
 								<img
 									src="assets\img\thumbnails\faceimage.png"
 									class="img-thumbnail rounded-circle"
@@ -429,7 +434,7 @@
 								/>
 							</div>
 							<div>
-								<h4>代表取締役</h4>
+								<h4 class="">代表取締役</h4>
 								<h3 class="margin-0">王&ensp;磊</h3>
 								<p class="margin-0">ワン&ensp;レイ</p>
 							</div>
@@ -447,14 +452,13 @@
 					</div>
 				</section>
 
-				<section class="section-area justify-start">
-					<div class="title-box2 marginx-10">
-						<h2 class="text-left">PROFILE</h2>
-						<h4 class="text-rigth margin-0">プロフィール</h4>
-					</div>
-				</section>
-
-				<section>
+				<section class="history-area">
+					<section class="section-area justify-start">
+						<div class="title-box2 marginx-10">
+							<h2 class="text-left" style="color: white">PROFILE</h2>
+							<h4 class="text-rigth margin-0">プロフィール</h4>
+						</div>
+					</section>
 					<div class="section-area justify-center">
 						<div class="items-area">
 							<div class="text-center">
@@ -512,7 +516,7 @@
 										<dl>
 											<dt>2022年</dt>
 											<div class="list-box">
-												<h5>家族・その他の活動</h5>
+												<h5>家族・その他活動</h5>
 												<div class="list-items">
 													<p>
 														妻と子5人の7人家族で藤枝市岡部町で暮らしています。会社としての仕事のほかにも、一般社団法人藤枝青年会議所(JC)に所属し活動したり、男子中学生のバスケットチームを作って、志の高い選手の育成を行っておりその全てが社会貢献であると思っています。
@@ -543,7 +547,39 @@
 				<section class="section-area justify-start">
 					<div class="title-box2 marginx-10">
 						<h2 class="text-left">COMPANY</h2>
-						<h4 class="text-rigth margin-0">会社概要</h4>
+						<h4 class="text-rigth margin-0"></h4>
+					</div>
+				</section>
+				<section class="justify-center">
+					<div class="items-area text-center">
+						<h3>会社概要</h3>
+						<div class="v-hr-green"></div>
+						<div class="justify-center margin-y-40">
+							<table class="table mytable">
+								<tr>
+									<th>社名</th>
+									<td>株式会社&emsp;大王実業</td>
+								</tr>
+								<tr>
+									<th>代表者</th>
+									<td>
+										<rb>ワン&emsp;レイ</rb><br />
+										<span>王&emsp;磊</span>
+									</td>
+								</tr>
+								<tr>
+									<th>設立年</th>
+									<td>2013年</td>
+								</tr>
+								<tr>
+									<th class="align-middle">所在地</th>
+									<td>
+										本社：藤枝市緑町1-4-21 <br />
+										岡部事務所：藤枝市岡部町内谷627-15
+									</td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</section>
 			</main>
