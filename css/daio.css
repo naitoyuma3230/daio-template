@@ -639,12 +639,6 @@ h2 {
 	background-size: cover;
 }
 
-.swiper-card-outline .swiper-slide {
-	border: 1px solid rgb(170, 170, 170);
-	border-radius: 20px;
-	box-shadow: 0 5px 7px rgba(0, 0, 0, 0.22);
-}
-
 /* タイトルバックイラスト */
 .bg-title {
 	width: auto;

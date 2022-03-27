@@ -44,21 +44,18 @@
 	justify-content: center;
 }
 
+.swiper-slide > div {
+	border: 1px solid rgb(170, 170, 170);
+	border-radius: 20px;
+	padding: 0 10px;
+	background: white;
+}
+
 .swiper-background {
 	position: relative;
 	border-radius: 20px;
-	/* width: 100%; */
 	min-width: 300px;
 	min-height: 200px;
-}
-.slide-item1 {
-	/* background: rgb(245, 179, 197); */
-	background-image: url(../assets/img/thumbnails/a2a.png);
-	background-size: cover;
-}
-
-.swiper-background.item2 {
-	background: seagreen;
 }
 
 .sub-img {
