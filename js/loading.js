@@ -9,7 +9,7 @@ $(window).on("load", function () {
 
 	//=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
 	$("#splash")
-		.delay(2200)
+		.delay(1500)
 		.fadeOut("slow", function () {
 			//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
 
