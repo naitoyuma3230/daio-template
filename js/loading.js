@@ -5,11 +5,11 @@ $(window).on("load", function () {
 });
 
 $(window).on("load", function () {
-	$("#splash-logo").delay(2000).fadeOut("slow"); //ロゴを1.2秒でフェードアウトする記述
+	$("#splash-logo").delay(1200).fadeOut("slow"); //ロゴを1.2秒でフェードアウトする記述
 
 	//=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
 	$("#splash")
-		.delay(1500)
+		.delay(1000)
 		.fadeOut("slow", function () {
 			//ローディングエリア（splashエリア）を1.5秒でフェードアウトする記述
 
