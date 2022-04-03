@@ -23,7 +23,7 @@
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	background: #579435;
+	background: #0c6b41;
 	/*丸のスタート位置と形状*/
 	transform: scale(0); /*scaleをはじめは0に*/
 	right: -50px;

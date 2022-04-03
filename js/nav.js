@@ -16,9 +16,15 @@ $("#g-nav div").click(function () {
 $("#move-home").on("click", function () {
 	$("html,body").animate({ scrollTop: $("#home").offset().top });
 });
+$("#move-company").on("click", function () {
+	$("html,body").animate({ scrollTop: $("#company").offset().top });
+});
 $("#move-service").on("click", function () {
 	$("html,body").animate({ scrollTop: $("#service").offset().top });
 });
-$("#move-production,.test").on("click", function () {
+$("#move-production").on("click", function () {
 	$("html,body").animate({ scrollTop: $("#production").offset().top });
+});
+$("#move-about").on("click", function () {
+	$("html,body").animate({ scrollTop: $("#about").offset().top });
 });
