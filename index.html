@@ -44,7 +44,7 @@
 		<link rel="stylesheet" href="./css/scroll.css" />
 		<link rel="stylesheet" href="./css/scrollDown.css" />
 		<link rel="stylesheet" href="./css/mySwiper.css" />
-		<!-- <link rel="stylesheet" href="./css/loading.css" /> -->
+		<link rel="stylesheet" href="./css/loading.css" />
 		<!-- jquery -->
 		<script src="plugin/jquery/jquery.min.js"></script>
 
@@ -54,14 +54,14 @@
 	</head>
 
 	<body>
-		<!-- <div id="splash">
+		<div id="splash">
 			<div id="splash-logo">
 				<h1>株式会社&ensp;大王実業</h1>
 				<div class="v-hr-green text-white"></div>
 			</div>
 		</div>
 		<div class="splashbg1"></div>
-		<div class="splashbg2"></div> -->
+		<div class="splashbg2"></div>
 
 		<!-- <div id="container" class="text-center"> -->
 		<header>
@@ -405,6 +405,49 @@
 				</div>
 
 				<div class="d-flex align-end margin-y-40 bg-title">
+					<div class="bg-title-img yane"></div>
+					<div class="icon-fromt-title">金属屋根工事</div>
+				</div>
+				<!-- スライダーのメインコンテナの div 要素（必須） -->
+				<div class="swiper m-bottom-40 swiper-card-outline">
+					<!-- スライドを囲む div 要素（必須） -->
+					<div class="swiper-wrapper">
+						<!-- それぞれのスライドの div 要素（必須） -->
+						<div class="swiper-slide">
+							<div>
+								<div class="swiper-title">一般住宅のストレート屋根改装</div>
+								<div class="justify-center">
+									<div class="swiper-background img4">
+										<div class="sub-img img4-b sub-img-text">Befor</div>
+									</div>
+								</div>
+								<div class="swiper-text">金属屋根工事</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<div class="swiper-title">一般住宅の瓦屋根改装</div>
+								<div class="justify-center">
+									<div class="swiper-background img10">
+										<div class="sub-img img10-b sub-img-text">Befor</div>
+									</div>
+								</div>
+								<div class="swiper-text">金属屋根工事</div>
+							</div>
+						</div>
+					</div>
+					<!-- ページネーションの div 要素（省略可能） -->
+					<div class="swiper-pagination"></div>
+
+					<!-- ナビゲーションボタンの div 要素（省略可能） -->
+					<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+
+					<!-- スクロールバーの div 要素（省略可能） -->
+					<!-- <div class="swiper-scrollbar"></div> -->
+				</div>
+
+				<div class="d-flex align-end margin-y-40 bg-title">
 					<div class="bg-title-img park"></div>
 					<div class="icon-fromt-title">ボランティア活動</div>
 				</div>
@@ -620,10 +663,11 @@
 				</div>
 			</div>
 		</footer>
-		<!-- </div>  loading-container -->
+		</div>  
+		<!-- loading-container -->
 		<script src="./js/nav.js"></script>
 		<script src="./js/myjs.js"></script>
 		<script src="./js/scroll.js"></script>
-		<!-- <script src="./js/loading.js"></script> -->
+		<script src="./js/loading.js"></script>
 	</body>
 </html>
